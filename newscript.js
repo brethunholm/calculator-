@@ -12,7 +12,6 @@ let equalPushed;
 
 
 
-
 function logNumber(e) {
     
     out.innerHTML= e.target.textContent
@@ -21,6 +20,8 @@ function logNumber(e) {
     while(result === '') {
         input.push(e.currentTarget.innerText)
         console.log(input)
+        out.innerHTML= input.join('')
+        
         if(equalPushed === true) {
             result = input
             console.log(result)
@@ -30,8 +31,6 @@ function logNumber(e) {
 
     }
    
-
-
 }
 
 
